@@ -1,6 +1,6 @@
 '''
 Title           :WordTime
-Description     :A Python program to estimate the time taken to type a word.
+Description     :A Python script to estimate the time taken to type a word.
 Author          :Karthikeyan KC
 URL             :http://geekswipe.net/technology/computing/measure-the-time-you-take-to-type-a-word-using-python/
 Date            :13-10-2015
@@ -11,6 +11,8 @@ Python Version  :2.7.8
 
 import Tkinter
 import time
+
+start = None
 
 key_watcher = Tkinter.Tk()
 
@@ -51,8 +53,9 @@ def pressed(keyevent):
 		#Even though you measure time, it is insignificant! Also, it returns 0...
 		print "It's just one letter... You at least need a two letter word to calculate the time!"
 
+	global start
+
 	if type_word_size == 1 and compare_word_size > 1 and compare_word_first_letter == keyevent.char:
-		global start
 		start = time.time()
 
 	if type_word_size == compare_word_size and type_word_size != 1: 
