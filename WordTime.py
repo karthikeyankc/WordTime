@@ -2,7 +2,7 @@
 Title           :WordTime
 Description     :A Python script to estimate the time taken to type a word.
 Author          :Karthikeyan KC
-URL             :http://geekswipe.net/technology/computing/measure-the-time-you-take-to-type-a-word-using-python/
+URL             :https://geekswipe.net/technology/computing/measure-the-time-you-take-to-type-a-word-using-python/
 Date            :13-10-2015
 Version         :0.2
 Usage           :python WordTime.py
